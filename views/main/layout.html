@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>博客</title>
+
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+
+    <script type="text/javascript" src="/public/js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="public/js/index.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <div class="wrap">
+
+	    <div class="header">
+
+		    <ul>
+
+		        {% if category == '' %}
+
+		        <li><a href="/" class="focus">首页</a></li>
+
+		        {% else %}
+
+		        <li><a href="/">首页</a></li>
+
+		        {% endif %} {% for cate in categories %} {% if category == cate.id %}
+
+		        <li>
+
+		            <a href="/?category={{cate.id}}" class="focus">{{cate.name}}</a>
+
+		        </li>
+
+		        {% else %}
+
+		        <li>
+
+		            <a href="/?category={{cate.id}}">{{cate.name}}</a>
+
+		        </li>
+
+		        {% endif %} {% endfor %}
+
+		    </ul>
+
+		</div>
+
+        {% block content %}{% endblock %}
+
+    </div>
+
+</body>
+
+
+
+</html>

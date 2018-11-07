@@ -1,0 +1,167 @@
+/* Default Settings */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: gray;
+  color: #6c6c6c;
+}
+
+#container {
+  width: 850px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.f13 {
+  font-size: 13px;
+}
+.f15 {
+  font-size: 15px;
+}
+.w200 {
+  font-weight: 200;
+}
+.w400 {
+  font-weight: 400;
+}
+.w600 {
+  font-weight: 600;
+}
+/* UI-list Settings */
+.list-ul {
+  display: inline-block;
+}
+.list-li {
+  float: left;
+  margin-right: 30px;
+}
+.list-li:hover {
+  float: left;
+  cursor: pointer;
+  color: #ec5483;
+  border-bottom: 2px solid #ec5483;
+}
+/* UI-icon Settings */
+.icon-arrow1 {
+  display: inline-block;
+  width: 14px;
+  height: 7px;
+  background-image: url(../img/arrow.png);
+  background-repeat:no-repeat;
+  margin-left: 5px;
+}
+.icon-arrow2 {
+  display: inline-block;
+  width: 14px;
+  height: 7px;
+  background-image: url(../img/arrow2.png);
+  background-repeat:no-repeat;
+  margin-left: 5px;
+}
+.icon-return {
+  display: inline-block;
+  width: 39px;
+  height: 46px;
+  background-image: url(../img/return.png);
+  background-repeat:no-repeat;
+  margin-left: 5px;
+}
+.icon-stopwatch {
+  display: inline-block;
+  width: 46px;
+  height: 51px;
+  background-image: url(../img/stopwatch.png);
+  background-repeat:no-repeat;
+  margin-left: 5px;
+}
+.icon-reminders {
+  display: inline-block;
+  width: 42px;
+  height: 51px;
+  background-image: url(../img/reminders.png);
+  background-repeat:no-repeat;
+  margin-left: 5px;
+}
+/* Header Settings */
+#header {
+  padding-top: 30px;
+  height: 70px;
+  background: #ffffff;
+}
+
+#header > #logo {
+  width: 100px;
+  margin-left: 130px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#header > #nav {
+  float: right;
+  margin-top: 10px;
+  margin-right: 60px;
+  font-size: 15px;
+}
+
+/* Bannber Settings */
+#bannber {
+  height: 329px;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 140px;
+  background-image: url(../img/banner.png);
+}
+
+#bannber > .button {
+  margin: 40px auto;
+  font-size: 18px;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  color: #ffffff;
+  background: #ec5483;
+}
+#bannber > .button:hover {
+  cursor: pointer;
+}
+
+/* Content Settings */
+#content {
+  height: 234px;
+  background: #ffffff;
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+#content .list-li {
+  width: 200px;
+  height: 120px;
+}
+#content .list-li:hover {
+  border: none;
+}
+
+/* Footer Settings */
+#footer {
+  text-align: center;
+  height: 236px;
+  padding-top: 70px;
+  background: #38404b;
+  color: #aab7ca;
+}
+
+#footer > #logo {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#footer a {
+  text-decoration:none;
+  color: #ffffff;
+}
