@@ -1,9 +1,15 @@
- * {
+* {
  	margin: 0;
  	padding: 0;
- }
- ul {
-	list-style: none;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+	background-color: rgb(208,212,215);
 }
 
 .hide {
@@ -16,62 +22,101 @@
 	width: 100%;
 	text-align: center;
 }
-.header {
-	height: 50px;
-	background-color:rgb(245,245,245);
+
+#header {
+  padding-top: 8px;
+  height: 55px;
+  background: rgb(56,68,82);
 }
-.header > ul {
-	text-align: center;
-	margin-top: 10px;
+
+#header > #logo {
+  float: left;
+  color: white;
+  margin-top: 8px;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration-line: none;
 }
-.header > ul > li{
-	display: inline-block;
-	font-size: 20px;
-	margin: 0 20px;
+
+#header > #nav {
+  color: white;
+  float: right;
+  margin-top: 8px;
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.header a {
-	text-decoration-line: none;
+.list-ul {
+  display: inline-block;
+}
+
+.list-li {
+  color: white;
+  float: left;
+  margin-right: 20px;
+  list-style-type: none;
+  text-decoration-line: none;
 }
 
 .body {
-	background-color: #fff;
-	margin-top: 10px;
+	margin-top: 15px;
 	width: 100%;
 	text-align: center;
 }
 .cont {
 	display: inline-block;
-	width: 60%;
+	width: 70%;
+	float: left;
 	vertical-align: top;
 }
 .cont li {
-	margin-bottom: 10px;
-	background-color: rgb(245,245,245);
-	padding: 10px;
-	box-shadow: 5px 5px 5px #c3baba;
+	margin-left: 55px;
+	margin-bottom: 30px;
+	background-color: rgb(255,255,255);
+	padding: 45px;
+	border: 1px solid #c3baba;
+	box-shadow: 1px 1px 1px #c3baba;
 }
+
 .info {
 	display: inline-block;
-	width: 30%;
-
+	width: 28%;
+	float: right;
+	margin-right: 10px;
 }
+
 .info > div {
-	box-shadow: 5px 5px 5px #c3baba;
-	background-color: rgb(245,245,245);
+	border: 1px solid #c3baba;
+	box-shadow: 1px 1px 1px #c3baba;
+	background-color: rgb(255,255,255);
 	padding: 10px;
 	margin-bottom: 20px;
 	text-align: left;
 }
+
 .infoTitle {
 	margin: 0;
     border-bottom: 1px solid;
     text-align: left;
     font-weight: bold;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.dream {
+	margin: 0;
+    border-bottom: 1px solid;
+    text-align: left;
+    font-weight: bold;
+	height: 900px;
+}
+
+.dream > ul > li {
+	line-height: 60px;
 }
 
 .infoTitle > ul > li{
-	line-height: 20px;
+	line-height: 60px;
 }
 
 .keyWords {
@@ -109,7 +154,12 @@
     margin-top: 10px;
 }
 .focus {
-	color: #000!important;
+	color: white;
 	font-weight: bolder;
 	margin-left: 20px;
 }
+
+.showInfo {
+	height: 100px;
+}
+

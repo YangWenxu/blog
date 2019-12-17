@@ -6,30 +6,28 @@
 	<title>博客</title>
 	<link rel="stylesheet" type="text/css" href="/public/css/main.css">
 	<script type="text/javascript" src="/public/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="public/js/index.js"></script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
 </head>
 
 <body>
 
 	<div class="wrap">
-		<div class="header">
-			<ul>
-				{% if category == '' %}
-				<li><a href="/index2" class="focus">首页</a></li>
-				{% else %}
-				<li><a href="/index2">首页</a></li>
-				{% endif %}
-				<li>
-						<a href="/">blog</a>
+		<div id="header">
+			{% if category == '' %}
+				<a href="/index" id="logo">首页</a>
+			{% endif %}
+			<ul class="list-ul" id="nav">				
+				<li class="list-li">
+						<a href="/" class="list-li">blog</a>
 				</li>
 				{% for cate in categories %}
 				{% if category == cate.id %}
-				<li>
-					<a href="?category={{cate.id}}" class="focus">{{cate.name}}</a>
+				<li class="list-li">
+					<a href="?category={{cate.id}}" class="list-li">{{cate.name}}</a>
 				</li>
 				{% else %}
-				<li>
-					<a href="?category={{cate.id}}">{{cate.name}}</a>
+				<li class="list-li">
+					<a href="?category={{cate.id}}" class="list-li">{{cate.name}}</a>
 				</li>
 				{% endif %}
 				{% endfor %}
@@ -98,7 +96,7 @@
 					<div class="name">{{userInfo.username}}
 					</div>
 					{% if userInfo.isAdmin %}
-					<div class="info">你好管理员，欢迎来到博客
+					<div class="info">
 						<a href="/admin">进入管理</a>
 					</div>
 					{% else %}
@@ -156,8 +154,8 @@
 					</form>
 				</div>
 				{% endif %}
-				<div>
-					<p class="infoTitle">社区</p>
+				<div class="dream">
+					<p>社区</p>
 					<ul>
 						<li>
 							<a href="https://github.com/yangwenxu">github</a>
@@ -170,6 +168,9 @@
 						</li>
 						<li>
 							<a href="https://www.imooc.com/">慕课网</a>
+						</li>
+						<li>
+							<a href="https://www.freecodecamp.one">freecodecamp社区</a>
 						</li>
 					</ul>
 				</div>

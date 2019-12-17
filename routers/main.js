@@ -15,12 +15,47 @@ router.use(function (req, res, next) {
     })
 })
 //首页
-router.get('/index2', function (req, res, next) {
-    res.render('main/index2', {
+router.get('/index', function (req, res, next) {
+    res.render('./index', {
         userInfo: req.userInfo
     });
 })
 
+router.get('/time',function(req,res,next){
+    res.render('./time', {
+        userInfo: req.userInfo
+    });
+})
+
+router.get('/about',function(req,res,next){
+    res.render('./about', {
+        userInfo: req.userInfo
+    });
+})
+
+router.get('/gbook',function(req,res,next){
+    res.render('./gbook', {
+        userInfo: req.userInfo
+    });
+})
+
+router.get('/picture',function(req,res,next){
+    res.render('./picture', {
+        userInfo: req.userInfo
+    });
+})
+
+router.get('/life',function(req,res,next){
+    res.render('./life', {
+        userInfo: req.userInfo
+    });
+})
+
+router.get('/list',function(req,res,next){
+    res.render('./list', {
+        userInfo: req.userInfo
+    });
+})
 
 router.get('/', function (req, res, next) {
     data.category = req.query.category || '';
